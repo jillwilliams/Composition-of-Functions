@@ -1,0 +1,59 @@
+body {
+    background-image: linear-gradient(lightblue, aqua);
+    margin: 15px 45px 15px 25px;
+    font-family: "Patrick Hand";
+    letter-spacing: 3px;
+    color: purple;
+    font-size: 1.5rem;
+    text-shadow: 0.5px 0.5px yellow;
+}
+h1 {
+    color: purple;
+    text-decoration: underline;
+    font-size: 1.7rem;
+    text-shadow: 0.5px 0.5px yellow;
+    text-align: center;
+}
+#a1, #a2, #a3, #a4 {
+    width: 10%;
+    height: auto;
+    font-size: 1.5rem;
+    color: purple;
+    background-color: lightgoldenrodyellow;
+    font-family: "Patrick Hand";
+    border: 1px black solid;
+    outline: 2px lightgoldenrodyellow solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7, #myBtn8 {
+    width: 10%;
+    height: auto;
+    font-size: 1.5rem;
+    color: purple;
+    background-color: lightgoldenrodyellow;
+    font-family: "Patrick Hand";
+    border: 1px black solid;
+    outline: 2px lightgoldenrodyellow solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#demo, #demo2, #demo3, #demo4, #demo5, #demo6, #demo7, #demo8 {
+    width: 20%;
+    height: 50px;
+    font-size: 1.5rem;
+    color: purple;
+    background-color: lightgoldenrodyellow;
+    font-family: "Patrick Hand";
+    border: 1px black solid;
+    outline: 2px lightgoldenrodyellow solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: 1rem;
+}

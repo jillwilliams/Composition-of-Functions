@@ -1,0 +1,121 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" 
+    Unicode="U+1F334, UTF-8: F0 9F 8C B4" 
+    Unicode= "U+1F332, UTF-8: F0 9F 8C B2" 
+    Unicode= "U+00A9"  
+    Unicode="U+00A9, UTF-8: C2 A9" 
+    Unicode="U+1F440, UTF-8: F0 9F 91 80"
+    Unicode="U+00F7, UTF-8: C3 B7"
+    Unicode="U+30FB, UTF-8: E3 83 BB"
+    Unicode="U+03B8, UTF-8: CE B8"
+    Unicode="U+22C5, UTF-8: E2 8B 85"
+    Unicode="U+21D2, UTF-8: E2 87 92"
+    Unicode="U+27BE, UTF-8: E2 9E BE">
+    <title>Composition of Functions</title>
+    <link HREF="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Pangolin|Shadows+Into+Light|Fresca|Architects+Daughter|Amatic+SC|Caveat|Patrick+Hand|Kalam|Handlee|" rel="stylesheet">
+    <link rel="stylesheet" HREF="./styles.css">
+    <meta name="description" content="Composition of Functions">
+    <meta name="keywords" content="Functions">
+    <meta name="author" content="JK Williams">
+</head>
+<body>
+    <h1>
+        Composition of Functions<hr>
+    </h1>
+    <p>
+        Prior to starting this module you should review the Evaluating functions module: <a HREF="https://jillwilliams.github.io/Evaluating-Functions/">Evaluating Functions</a><hr>
+    </p>
+    <p>
+        Composition of functions is the same philosophy as evaluating functions for a given value of the variable. The difference is that Composition of Functions means that we will substitute one function into an equation instead of just a number. Then we will simplify the new function when possible. Another difference is you will be given 2 equations instead of one.<hr>
+    </p>
+    <p>
+        For example: given f(x) = 3x and g(x) = 4x, we will be asked to substitute one equation in to the other. The notation used for this is written one of two ways:<br>
+        1.  g(f(x))<br> 
+        2.  f(g(x))<br> 
+    </p>
+    <hr>
+    <p>
+        g(f(x)) tells us to use the function g(x) as our main function, then substitute for x the equation f(x).<hr>
+    </p>
+    <p>
+        f(g(x)) tells us to use the function f(x) as our main function, then substitute for x the equation g(x).<hr>
+    </p>
+    <p>
+        Example 1:<br>
+        Given f(x) = 3x and g(x) = 4x, perform g(f(x)).<br>
+        Solution: Use g(x) = 4x as your main equation, and substitute for x the equation f(x) = 3x.<br><br>
+        g(f(x)) = 4(3x)<br>
+        Now simplify the new equation. This will be our answer.
+        g(f(x)) = 12x <br><hr>
+    </p>
+    <p>
+        Using the same two equations, perform f(g(x)). Solution: Use f(x) as your main equation and substitute g(x) for x. Then simplify.
+        f(x) = 3x and g(x) = 4x, perform f(g(x)).<br>
+        f(g(x)) = 3(4x)<br>Now simplify the equation. This will be the answer: f(g(x)) = 12x.<br><hr>
+        *It is coincidence both answers are equal.<hr>
+    </p>
+    <p>
+        Example 2:<br>
+        Given f(x) = 5 - x and g(x) = 6x + 2<br>
+        Perform f(g(x)).<br>
+        Solution: Use the f(x) equation and substitute the second equation in to the first for variable x.<br>
+        f(g(x)) = 5 - (6x + 2)<br>
+        Now simplify the equation: 5 - (6x + 2) ➾ 5 - 6x - 2 ➾ -6x + 5 - 2 ➾ -6x +3 *Answer<br>
+        f(g(x)) = -6x + 3<hr>
+    </p>
+    <p>
+        Example 3:<br>
+        Given f(x) = 5 - x and g(x) = 6x + 2, perform g(f(x)).<br>
+        Solution: Use the g(x) equation and substitute the second equation in to the first for variable x.<br>
+        g(f(x)) = 6(5 - x) + 2<br>
+        Then simplify the new equation:<br> 6(5 - x) + 2 ➾ 30 - 6x + 2 ➾ -6x + 30 + 2 ➾ -6x + 32<br>
+        g(f(x)) = -6x + 32 *Answer<hr>
+    </p>
+    <p>
+        Example 4:<br>Given f(x) = x + 7 and g(x) = x<sup>2</sup> - 3, perform f(g(x)).<br>Substitute the g(x) equation in to the f(x) equation.<br>
+        f(g(x)) = (x<sup>2</sup> -3) + 7<br>
+        f(g(x)) = x<sup>2</sup> - 3 + 7<br>
+        f(g(x)) = x<sup>2</sup> + 4 *Answer<br><hr>
+    </p>
+    <p>
+        Now you try an example. Enter your answer into the space provided, then check your answer.<br>
+        Example 5: Given f(x) = x<sup>2</sup> + 6 and g(x) = 5x, perform f(g(x)).<br>Use the caret key "^" (shift 6) to raise x to the second power (x<sup>2</sup>).Leave one space between each term.<br>For example: 5x<sup>2</sup> + 9: type: 5x^2 + 9.<br>
+        <input type="text" id="a1" />
+        <button type="submit" id="myBtn" onclick="myCalc()">Submit</button>
+        <p id="demo"></p>
+        <button type="text" id="myBtn2" onclick="myCalc2()">I Give Up!</button>
+        <p id="demo2">Answer</p><hr>
+    </p>
+    <p>
+        Example 6: Given f(x) = 3x + 6 and g(x) = x + 4, perform f(g(x)).<br>Leave one space between each term.<br>
+        <input type="text" id="a2" />
+        <button type="submit" id="myBtn3" onclick="myCalc3()">Submit</button>
+        <p id="demo3"></p>
+        <button type="text" id="myBtn4" onclick="myCalc4()">I Give Up!</button>
+        <p id="demo4">Answer</p><hr>
+    </p>
+    <p>
+        Example 7: Given f(x) = 2x and g(x) = x + 5, perform g(f(x)).<br>Substitute the f(x) equation in to the g(x) equation for x, then simplify. Leave one space between each term when typing in your answer.<br>
+        <input type="text" id="a3" />
+        <button type="submit" id="myBtn5" onclick="myCalc5()">Submit</button>
+        <p id="demo5"></p>
+        <button type="text" id="myBtn6" onclick="myCalc6()">I Give Up!</button>
+        <p id="demo6">Answer</p><hr>
+    </p>
+    <p>
+        Example 8: Given f(x) = 5x - 4 and g(x) = 2x + 5, perform g(f(x)).<br>Substitute the f(x) equation in to the g(x) equation for x, then simplify. Leave one space between each term when typing in your answer.<br>
+        <input type="text" id="a4" />
+        <button type="submit" id="myBtn7" onclick="myCalc7()">Submit</button>
+        <p id="demo7"></p>
+        <button type="text" id="myBtn8" onclick="myCalc8()">I Give Up!</button>
+        <p id="demo8">Answer</p><hr>
+    </p>
+    <script src="script.js"></script>
+    <footer>
+        ©2020 All Things Math<br>All Rights Reserved
+    </footer>
+</body>
+</html>
+
